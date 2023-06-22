@@ -1,0 +1,193 @@
+:root {
+  /* text color */
+  --text-gunmetal: #152432;
+  --color-pale-ivory: #f0f0e0;
+  --color-pale-ivory-2: rgba(240, 240, 224, 0.9);
+  --color-olive-gold: #bdb345;
+  --color-goldenrod: #948d37;
+  --color-olive-brown: #6d6723;
+}
+
+/* Reset */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  /* This defines what 1rem is */
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* Reset End */
+
+body {
+  font-family: "Cabin", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--text-gunmetal);
+  padding: 4rem 0;
+  margin: 0;
+  background: radial-gradient(circle at center top, #e2e6d9, #404040);
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.container {
+  margin: 0 auto;
+  width: 36rem;
+  height: 48rem;
+  border-radius: 2px;
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(imgs/sulaymaniyah.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.city-title {
+  text-align: center;
+  font-size: 2.6rem;
+  padding-top: 2.4rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.city-title::after {
+  content: "";
+  width: 16rem;
+  height: 1px;
+  background-color: var(--text-gunmetal);
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.weather-container {
+  text-align: center;
+  margin: 0 auto;
+  /* display: block; */
+}
+
+.city-weather-temperature {
+  font-size: 2.2rem;
+  margin-bottom: 2px;
+}
+/* 
+.city-weather-description {
+  margin-bottom: 0.5rem;
+}
+
+.city-weather-icon {
+  height: 5rem;
+  width: 5rem; 
+}  */
+
+.content {
+  position: absolute;
+  bottom: 0rem;
+  width: 100%;
+}
+
+.navigation {
+  background-color: var(--color-pale-ivory);
+}
+
+.nav-list {
+  padding-block: 1.3rem 1.2rem;
+  padding-inline: 0.7rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3rem;
+}
+
+.nav-link:is(:link, :visited) {
+  display: inline;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 1.1rem;
+  cursor: pointer;
+}
+
+.nav-link:is(:hover, :focus) {
+  border-bottom: 3px solid var(--color-olive-gold);
+}
+
+.nav-link.selected {
+  border-bottom: 3px solid var(--color-olive-gold);
+}
+
+img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 10rem;
+}
+
+.nav-info {
+  display: flex;
+  margin: 0 auto;
+  padding: 1.3rem 2.7rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-pale-ivory-2);
+}
+
+address {
+  font-style: normal;
+}
+
+h4 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.address {
+  font-size: 1.4rem;
+  margin-bottom: 0.4rem;
+}
+
+.phone-number:is(:link, :visited) {
+  font-size: 1.4rem;
+  color: var(--color-goldenrod);
+  transition: all 1s;
+  cursor: pointer;
+}
+
+.phone-number:is(:hover) {
+  color: var(--color-olive-brown);
+}
+
+.right-half {
+  display: flex;
+  gap: 1rem;
+}
+
+.hide {
+  display: none;
+}

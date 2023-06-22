@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>City Widget</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Herr+Von+Muellerhoff&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="sulaymaniyah">
+      <div class="container">
+        <div class="city-title">Sulaymaniyah</div>
+        <div class="weather-container">
+          <div
+            class="city-weather-temperature"
+            id="cityWeatherTemperature"
+          ></div>
+          <div
+            class="city-weather-description"
+            id="cityWeatherDescription"
+          ></div>
+
+          <div
+            class="city-weather-icon-container"
+            id="cityWeatherIconContainer"
+          ></div>
+        </div>
+
+        <!-- content -->
+        <div class="content">
+          <nav class="navigation">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="#" class="nav-link" data-target="home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link" data-target="places">Places</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link" data-target="restaurants"
+                  >Restaurants</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link selected" data-target="offices"
+                  >Offices</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <!-- content end -->
+
+          <!-- nav info offices -->
+          <div class="nav-info clearfix" id="offices">
+            <!-- left half -->
+            <div class="left-half">
+              <address>
+                <h4>Millennium Hotel</h4>
+                <p class="address">
+                  Bakhtiary Street,<br />
+                  Sulaymaniyah<br />
+                </p>
+                <a href="#" class="phone-number">+694 770 123 7654</a>
+              </address>
+            </div>
+            <!-- left half end -->
+            <!-- right half -->
+            <div class="right-half">
+              <img src="imgs/hotel.jpg" alt="hotel" />
+              <img src="imgs/hotel-1.jpg" alt="hotel" />
+            </div>
+            <!-- right half end -->
+          </div>
+          <!-- nav info offices -->
+
+          <!-- nav info restaurant-->
+          <div class="nav-info hide" id="restaurants">
+            <!-- left half -->
+            <div class="left-half">
+              <address>
+                <h4>Titanic Hotel</h4>
+                <p class="address">
+                  Goizha, Circle of Malik Mahmoud,<br />
+                  Sulaymaniyah<br />
+                </p>
+                <a href="#" class="phone-number">+694 770 123 2354</a>
+              </address>
+            </div>
+            <!-- left half end -->
+            <!-- right half -->
+            <div class="right-half">
+              <img src="imgs/hotel.jpg" alt="hotel" />
+              <img src="imgs/hotel-1.jpg" alt="hotel" />
+            </div>
+            <!-- right half end -->
+          </div>
+          <!-- nav info restaurant -->
+
+          <!-- nav info places -->
+          <div class="nav-info hide" id="places">
+            <!-- left half -->
+            <div class="left-half">
+              <address>
+                <h4>Azadi Park</h4>
+                <p class="address">
+                  Shireen Street,<br />
+                  Sulaymaniyah<br />
+                </p>
+                <a href="#" class="phone-number">+694 770 693 2354</a>
+              </address>
+            </div>
+            <!-- left half end -->
+            <!-- right half -->
+            <div class="right-half">
+              <img src="imgs/hotel.jpg" alt="hotel" />
+              <img src="imgs/hotel-1.jpg" alt="hotel" />
+            </div>
+            <!-- right half end -->
+          </div>
+          <!-- nav info places -->
+
+          <!-- nav info hotels -->
+          <div class="nav-info hide" id="home">
+            <!-- left half -->
+            <div class="left-half">
+              <address>
+                <h4>High Crest Hotel</h4>
+                <p class="address">
+                  Bakrajo Road,<br />
+                  Sulaymaniyah<br />
+                </p>
+                <a href="#" class="phone-number">+694 770 452 2354</a>
+              </address>
+            </div>
+            <!-- left half end -->
+            <!-- right half -->
+            <div class="right-half">
+              <img src="imgs/hotel.jpg" alt="hotel" />
+              <img src="imgs/hotel-1.jpg" alt="hotel" />
+            </div>
+            <!-- right half end -->
+          </div>
+          <!-- nav info hotels -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
