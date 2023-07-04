@@ -1,3 +1,5 @@
+"use strict";
+
 const weatherContainer = document.querySelector(".weather-container");
 
 // Elements for displaying weather information
